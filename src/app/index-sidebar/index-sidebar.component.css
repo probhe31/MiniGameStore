@@ -1,0 +1,44 @@
+.index_sidebar
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index: 1;
+    position: fixed;
+    overflow: hidden;
+    width: 260px;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F4F4F4;
+}
+
+.sidebar_browse_group
+{
+    border-top: 0;
+    padding: 20px;
+}
+
+.browse_filters
+{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.browse_filters a
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all 0.1s ease;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 27px;
+    line-height: 27px;
+    width: 50%;
+    color: inherit;
+    opacity: 0.8;
+    text-decoration: none;
+}

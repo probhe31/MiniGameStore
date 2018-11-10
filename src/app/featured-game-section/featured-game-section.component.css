@@ -1,0 +1,247 @@
+.game_section {
+	padding: 0 20px;
+	margin-bottom: 40px
+}
+
+.game_section:empty {
+	display: none
+}
+
+.game_section.solid {
+	background-color: #F4F4F4;
+	padding-top: 20px;
+	box-shadow: inset 2px 0 0 rgba(0, 0, 0, 0.05);
+	margin-bottom: 50px
+}
+
+@media (max-width: 850px) {
+	.game_section.solid {
+		box-shadow: none
+	}
+}
+
+.game_section:last-child {
+	margin-bottom: 0
+}
+
+@media (max-width: 1100px) {
+	.game_section {
+		padding-left: 0;
+		padding-right: 0
+	}
+}
+
+.game_section .grid_footer_button {
+	text-align: center
+}
+
+@media (max-width: 650px) {
+	.game_section .grid_footer_button {
+		font-size: 16px
+	}
+}
+
+
+
+
+.section_header {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+@media (max-width: 650px) {
+	.section_header {
+		margin-left: 10px
+	}
+}
+
+.section_header>* {
+	margin-right: 20px
+}
+
+.section_header h2 {
+	font-size: 20px;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	padding-right: 10px
+}
+
+@media (max-width: 650px) {
+	.section_header h2 {
+		font-size: 16px
+	}
+}
+
+.section_header .outline_button {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	transition: all 0.2s ease;
+	display: inline-block;
+	border-radius: 3px;
+	text-decoration: none;
+	padding: 3px 10px;
+	font-size: 14px;
+	letter-spacing: 0.025em;
+	white-space: nowrap;
+	border: 1px solid;
+	border-color: #dadada;
+	background-color: white;
+	color: #434343;
+	margin-left: 10px
+}
+
+.section_header .outline_button:hover {
+	background: white;
+	color: #222;
+	color: white;
+	background: #FA5C5C;
+	border-color: #FA5C5C
+}
+
+.section_header .outline_button:active {
+	background: #e44949;
+	border-color: #e44949
+}
+
+
+.section_header .outline_button:hover {
+	opacity: 1
+}
+
+@media (max-width: 650px) {
+	.section_header {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center
+	}
+	.section_header h2 {
+		font-size: 16px;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1
+	}
+}
+
+.featured_game_grid_widget {
+	padding: 20px 0 0 20px;
+	margin-bottom: 20px
+}
+
+
+.featured_game_grid_widget h2 {
+	padding-right: 20px;
+	margin: 0;
+	margin-bottom: 25px
+}
+
+.featured_game_grid_widget .game_cell {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	width: 192px
+}
+
+.featured_game_grid_widget .game_cell:hover .label {
+	bottom: 0px
+}
+
+.featured_game_grid_widget .game_cell:hover .gif_overlay {
+	opacity: 1
+}
+
+body.disable_hover .featured_game_grid_widget .game_cell:hover .label {
+	bottom: -30px
+}
+
+.featured_game_grid_widget .game_cell.image_loading .game_thumb,
+.featured_game_grid_widget .game_cell.image_loading .game_vid {
+	opacity: 0
+}
+
+.featured_game_grid_widget .game_cell .bordered {
+	background: rgba(0, 0, 0, 0.1);
+	width: 192px;
+	height: 152px;
+	position: relative
+}
+
+.featured_game_grid_widget .game_cell .game_thumb,
+.featured_game_grid_widget .game_cell .game_vid {
+	transition: opacity 0.20s ease-in-out
+}
+
+
+
+.featured_game_grid_widget .game_cell .game_thumb {
+	vertical-align: top;
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-position: 50% 50%;
+	background-size: cover
+}
+
+.featured_game_grid_widget .game_cell .gif_overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: opacity 0.2s ease
+}
+
+.featured_game_grid_widget .game_cell .game_vid {
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+}
+
+
+.featured_game_grid_widget {
+	margin-top: 0;
+	padding-top: 0;
+	padding-right: 10px
+}
+
+@media (max-width: 650px) {
+	.featured_game_grid_widget {
+		padding-left: 10px;
+		padding-right: 0
+	}
+}
+
+.featured_game_grid_widget .leader_game_row {
+	margin-left: 0;
+	margin-bottom: 30px
+}
+
+
+
+
+
+.index_game_grid_widget {
+	padding: 0 20px
+}
+
+@media (max-width: 650px) {
+	.index_game_grid_widget {
+		padding: 0 10px
+	}
+}
